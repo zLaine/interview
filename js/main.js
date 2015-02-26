@@ -102,7 +102,7 @@ window.onload = function()
     function statsDone()
     {
         statChoosing = false;
-    //    console.log('StatChoosing: ' , statChoosing);
+        console.log('StatChoosing: ' , statChoosing);
         
         interpersonalUp.destroy();
     }
@@ -120,7 +120,7 @@ window.onload = function()
             iText.text =  'Interpersonal: ' + interpersonal;
             skillText.text = 'Skill points: ' + skillPoints;
             console.log('Interpersonal: ' , interpersonal);
-        //    console.log('StatChoosing: ' , statChoosing);
+            console.log('StatChoosing: ' , statChoosing);
         }
     }
     
