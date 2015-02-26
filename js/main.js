@@ -90,11 +90,14 @@ window.onload = function()
             doneButton = game.add.button(400, 525, 'button', statsDone);
             done = game.add.text(435, 535, 'Done', style);
         }
+        
     }
     
     function statsDone()
     {
         statChoosing = false;
+        
+        interpersonal.kill();
     }
     
     function addIStat()
