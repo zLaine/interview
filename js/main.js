@@ -43,10 +43,10 @@ window.onload = function()
         interpersonalDown = game.add.button(game.world.centerX + 70, 400, 'button', subStat(interpersonal));
         
         //playing music
-        bgm = game.add.audio('bgm');
+     /*   bgm = game.add.audio('bgm');
         bgm.loop = true;
         bgm.volume = .5;
-        bgm.play();
+        bgm.play(); */
         
         style = { font: "15px Arial", fill: "#ffffff", align: "center" };
         text = game.add.text(16, 16, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
