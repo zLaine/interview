@@ -41,6 +41,8 @@ window.onload = function()
         game.load.image('bg', 'assets/sectioned_bg.png');
         game.load.image('button', 'assets/button.png');
         
+        game.load.spritesheet('doneButton', 'assets/doneButton.png', 111, 40, 3);
+        
         //game.load.audio('bgm', 'assets/reunited.mp3');
     }
     function create()
@@ -82,7 +84,7 @@ window.onload = function()
         speedUp = game.add.button(550, 425, 'button', addSStat);
         speedDown = game.add.button(250, 425, 'button', subSStat); 
         
-        doneButton = game.add.button(400, 525, 'button', statsDone);
+        doneButton = game.add.button(400, 525, 'buttonButton', statsDone, this, 0, 1, 2);
     }
     function update()
     {
