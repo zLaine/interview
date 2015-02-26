@@ -77,7 +77,7 @@ window.onload = function()
             speedUp = game.add.button(550, 425, 'button', addSStat);
             speedDown = game.add.button(250, 425, 'button', subSStat); 
             
-            iText = game.add.text(400, 175, 'Interpersonal: ', style);
+            iText = game.add.text(400, 175, interpersonal, style);
         }
     }
     
