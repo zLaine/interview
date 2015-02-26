@@ -16,6 +16,8 @@ window.onload = function()
     var bgm;
     var bg;
     
+    var statChoosing = true;
+    
     var interpersonalUp;
     var interpersonalDown;
     var programmingUp;
@@ -38,7 +40,7 @@ window.onload = function()
         
         bg = game.add.sprite(0,0, 'bg');
         
-        //creating buttons
+        /*//creating buttons
         interpersonalUp = game.add.button(game.world.centerX - 70, 200, 'button', addStat);
         interpersonalDown = game.add.button(game.world.centerX + 70, 200, 'button', subStat);
         
@@ -48,7 +50,7 @@ window.onload = function()
         bgm.volume = .5;
         bgm.play(); */
         
-        style = { font: "15px Arial", fill: "#ffffff", align: "center" };
+        style = { font: "15px Arial", fill: "#000000", align: "center" };
         text = game.add.text(16, 16, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
         text.fixedToCamera = true;
         
@@ -56,7 +58,12 @@ window.onload = function()
     }
     function update()
     {
-        
+        if(statChoosing == true)
+        {
+            //creating buttons
+            interpersonalUp = game.add.button(game.world.centerX - 70, 200, 'button', addStat);
+            interpersonalDown = game.add.button(game.world.centerX + 70, 200, 'button', subStat);
+        }
     }
     
     function addStat()
