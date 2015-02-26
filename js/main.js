@@ -35,6 +35,9 @@ window.onload = function()
     var speedUp;
     var speedDown;
     var doneButton;
+    var option1;
+    var option2;
+    var option3;
     
     function preload()
     {
@@ -42,6 +45,9 @@ window.onload = function()
         game.load.image('button', 'assets/button.png');
         
         game.load.spritesheet('doneButton', 'assets/doneButton.png', 111, 40, 3);
+        game.load.spritesheet('option1', 'assets/option1.png', 111, 40, 3);
+        game.load.spritesheet('option2', 'assets/option2.png', 111, 40, 3);
+        game.load.spritesheet('option3', 'assets/option3.png', 111, 40, 3);
         
         //game.load.audio('bgm', 'assets/reunited.mp3');
     }
@@ -50,10 +56,6 @@ window.onload = function()
         game.world.setBounds(0, 0, 800, 600);
         
         bg = game.add.sprite(0,0, 'bg');
-        
-        /*//creating buttons
-        interpersonalUp = game.add.button(game.world.centerX - 70, 200, 'button', addStat);
-        interpersonalDown = game.add.button(game.world.centerX + 70, 200, 'button', subStat);
         
         //playing music
      /*   bgm = game.add.audio('bgm');
@@ -75,6 +77,7 @@ window.onload = function()
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
         
+        //creating buttons
         interpersonalUp = game.add.button(550, 200, 'button', addIStat);
         interpersonalDown = game.add.button(250, 200, 'button', subIStat);
         programmingUp = game.add.button(550, 275, 'button', addPrStat);
@@ -84,7 +87,10 @@ window.onload = function()
         speedUp = game.add.button(550, 425, 'button', addSStat);
         speedDown = game.add.button(250, 425, 'button', subSStat); 
         
-        doneButton = game.add.button(400, 525, 'doneButton', statsDone, this, 1, 0, 2);
+        doneButton = game.add.button(400, 530, 'doneButton', statsDone, this, 1, 0, 2);
+        option1 = game.add.button(175, 530, 'option1', statsDone, this, 1, 0, 2);
+        option2 = game.add.button(275, 530, 'option2', statsDone, this, 1, 0, 2);
+        option3 = game.add.button(375, 530, 'option3', statsDone, this, 1, 0, 2);
     }
     function update()
     {
@@ -93,19 +99,22 @@ window.onload = function()
     
     function statsDone()
     {
-        interpersonalUp.kill();
-        interpersonalDown.kill();
-        programmingUp.kill();
-        programmingDown.kill();
-        planningUp.kill();
-        planningDown.kill();
-        speedUp.kill();
-        speedDown.kill();
-        
-        iText.x = 16;
-        prText.x = 16;
-        plText.x = 16;
-        sText.x = 16;
+        if(skillPoints == 0)
+        {
+            interpersonalUp.kill();
+            interpersonalDown.kill();
+            programmingUp.kill();
+            programmingDown.kill();
+            planningUp.kill();
+            planningDown.kill();
+            speedUp.kill();
+            speedDown.kill();
+            
+            iText.x = 16;
+            prText.x = 16;
+            plText.x = 16;
+            sText.x = 16;
+        }
     }
     
     function addIStat()
