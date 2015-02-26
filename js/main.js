@@ -39,8 +39,8 @@ window.onload = function()
         bg = game.add.sprite(0,0, 'bg');
         
         //creating buttons
-        interpersonalUp = game.add.button(game.world.centerX - 40, 400, 'button', addStat(interpersonal));
-        interpersonalDown = game.add.button(game.world.centerX + 40, 400, 'button', subStat(interpersonal));
+        interpersonalUp = game.add.button(game.world.centerX - 70, 400, 'button', addStat(interpersonal));
+        interpersonalDown = game.add.button(game.world.centerX + 70, 400, 'button', subStat(interpersonal));
         
         //playing music
         bgm = game.add.audio('bgm');
@@ -62,11 +62,13 @@ window.onload = function()
     function addStat(stat)
     {
         stat++;
+        console.log('+ button');
     }
     
     function subStat(stat)
     {
         stat--;
+        console.log('- button');
     }
     
     function eventTrigger(spriteA, spriteB)
