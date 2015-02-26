@@ -30,7 +30,7 @@ window.onload = function()
         game.load.image('bg', 'assets/sectioned_bg.png');
         game.load.image('button', 'assets/button.png');
         
-        game.load.audio('bgm', 'assets/Reunited.mp3');
+        game.load.audio('bgm', 'assets/reunited.mp3');
     }
     function create()
     {
