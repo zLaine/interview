@@ -115,6 +115,10 @@ window.onload = function()
     {
         skillPoints++;
         programming--;
+        if(programming < 0)
+        {
+            programming = 0;
+        }
         prText.text =  'Programming: ' + programming;
         console.log('programming: ' , programming);
     }
@@ -130,6 +134,10 @@ window.onload = function()
     {
         skillPoints++;
         planning--;
+        if(planning < 0)
+        {
+            planning = 0;
+        }
         plText.text =  'Planning: ' + planning;
         console.log('planning: ' , planning);
     }
@@ -145,6 +153,10 @@ window.onload = function()
     {
         skillPoints++;
         speed--;
+        if(speed < 0)
+        {
+            speed = 0;
+        }
         sText.text =  'Speed: ' + speed;
         console.log('speed: ' , speed);
     }
