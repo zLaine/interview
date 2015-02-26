@@ -27,9 +27,6 @@ window.onload = function()
     var speedUp;
     var speedDown;
     
-    var leftButtonX = 300;
-    var rightButtonX = 500;
-    
     function preload()
     {
         game.load.image('bg', 'assets/sectioned_bg.png');
@@ -64,8 +61,8 @@ window.onload = function()
         if(statChoosing == true)
         {
             //creating buttons
-            interpersonalUp = game.add.button(300, 200, 'button', addStat);
-            interpersonalDown = game.add.button(500, 200, 'button', subStat);
+            interpersonalUp = game.add.button(250, 200, 'button', addStat);
+            interpersonalDown = game.add.button(550, 200, 'button', subStat);
         /*    programmingUp = game.add.button(leftButtonX, 250, 'button', addStat);
             programmingDown = game.add.button(rightButtonX, 250, 'button', subStat);
             planningUp = game.add.button(leftButtonX, 300, 'button', addStat);
