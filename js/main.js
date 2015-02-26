@@ -91,6 +91,12 @@ window.onload = function()
             done = game.add.text(435, 535, 'Done', style);
         }
         
+        if(statChoosing == false)
+        {
+            interpersonalUp.destroy();
+            interpersonalDown.destroy();
+        }
+        
     }
     
     function statsDone()
