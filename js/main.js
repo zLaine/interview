@@ -84,32 +84,10 @@ window.onload = function()
         speedUp = game.add.button(550, 425, 'button', addSStat);
         speedDown = game.add.button(250, 425, 'button', subSStat); 
         
-        doneButton = game.add.button(400, 525, 'doneButton', statsDone, this, 0, 1, 2);
+        doneButton = game.add.button(400, 525, 'doneButton', statsDone, this, 1, 0, 2);
     }
     function update()
     {
-       /* if(statChoosing == true)
-        {
-            //creating buttons
-            interpersonalUp = game.add.button(550, 200, 'button', addIStat);
-            interpersonalDown = game.add.button(250, 200, 'button', subIStat);
-            programmingUp = game.add.button(550, 275, 'button', addPrStat);
-            programmingDown = game.add.button(250, 275, 'button', subPrStat);
-            planningUp = game.add.button(550, 350, 'button', addPlStat);
-            planningDown = game.add.button(250, 350, 'button', subPlStat);
-            speedUp = game.add.button(550, 425, 'button', addSStat);
-            speedDown = game.add.button(250, 425, 'button', subSStat); 
-            
-            doneButton = game.add.button(400, 525, 'button', statsDone);
-            done = game.add.text(435, 535, 'Done', style);
-        }
-        
-        else(statChoosing == false)
-        {
-            game.world.remove(interpersonalUp);
-            //interpersonalUp.destroy();
-            //interpersonalDown.destroy();
-        } */
         
     }
     
