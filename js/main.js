@@ -123,6 +123,9 @@ window.onload = function()
         speedDown.kill();
         
         iText.x = 16;
+        prText.x = 16;
+        plText.x = 16;
+        sText.x = 16;
     }
     
     function addIStat()
@@ -130,7 +133,7 @@ window.onload = function()
         if(skillPoints > 0)
         {
             skillPoints--;
-            interpersonal++;
+            interpersonal += 5;
             if(skillPoints < 0)
             {
                 skillPoints = 0;
@@ -144,7 +147,7 @@ window.onload = function()
     function subIStat()
     {
         skillPoints++;
-        interpersonal--;
+        interpersonal -= 5;
         if(interpersonal < 0)
         {
             interpersonal = 0;
@@ -163,7 +166,7 @@ window.onload = function()
         if(skillPoints > 0)
         {
             skillPoints--;
-            programming++;
+            programming += 5;
             if(skillPoints < 0)
             {
                 skillPoints = 0;
@@ -176,7 +179,7 @@ window.onload = function()
     function subPrStat()
     {
         skillPoints++;
-        programming--;
+        programming -= 5;
         if(programming < 0)
         {
             programming = 0;
@@ -195,7 +198,7 @@ window.onload = function()
         if(skillPoints > 0)
         {
             skillPoints--;
-            planning++;
+            planning += 5;
             if(skillPoints < 0)
             {
                 skillPoints = 0;
@@ -208,7 +211,7 @@ window.onload = function()
     function subPlStat()
     {
         skillPoints++;
-        planning--;
+        planning -= 5;
         if(planning < 0)
         {
             planning = 0;
@@ -227,7 +230,7 @@ window.onload = function()
         if(skillPoints > 0)
         {
             skillPoints--;
-            speed++;
+            speed += 5;
             if(skillPoints < 0)
             {
                 skillPoints = 0;
@@ -240,7 +243,7 @@ window.onload = function()
     function subSStat()
     {
         skillPoints++;
-        speed--;
+        speed -= 5;
         if(speed < 0)
         {
             speed = 0;
