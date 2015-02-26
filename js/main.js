@@ -27,8 +27,8 @@ window.onload = function()
     var speedUp;
     var speedDown;
     
-    var leftButtonX = (game.world.centerX - 70);
-    var rightButtonX = (game.world.centerX + 70);
+    var leftButtonX = game.world.centerX - 70;
+    var rightButtonX = game.world.centerX + 70;
     
     function preload()
     {
