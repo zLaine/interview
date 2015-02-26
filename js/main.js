@@ -17,6 +17,11 @@ window.onload = function()
     var prText;
     var plText;
     var sText;
+
+    var iText2;
+    var prText2;
+    var plText2;
+    var sText2;
     
     //var bgm;
     var bg;
@@ -59,7 +64,7 @@ window.onload = function()
         style = { font: "15px Arial", fill: "#000000", align: "left" };
         story = game.add.text(175, 85, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
         story.fixedToCamera = true;
-    //    iText = game.add.text(400, 175, 'Interpersonal: ', style);
+        iText = game.add.text(400, 175, 'Interpersonal: ', style);
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
     }
@@ -77,7 +82,9 @@ window.onload = function()
             speedUp = game.add.button(550, 425, 'button', addSStat);
             speedDown = game.add.button(250, 425, 'button', subSStat); 
             
-            iText = game.add.text(400, 175, interpersonal, style);
+            //iText = game.add.text(400, 175, 'Interpersonal: ', style);
+            //iText2 = game.add.text(415, 175, 'Interpersonal: ', style);
+            
         }
     }
     
@@ -85,6 +92,7 @@ window.onload = function()
     {
         skillPoints--;
         interpersonal++;
+        iText.text = 'Interpersonal: ', interpersonal;
         console.log('Interpersonal: ' , interpersonal);
     }
     
