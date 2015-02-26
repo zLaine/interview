@@ -11,8 +11,12 @@ window.onload = function()
     var planning = 0;
     var speed = 0;
     
-    var story;
     var style;
+    var story;
+    var iText;
+    var prText;
+    var plText;
+    var sText;
     
     //var bgm;
     var bg;
@@ -51,9 +55,11 @@ window.onload = function()
         bgm.volume = .5;
         bgm.play(); */
         
+        //text set up
         style = { font: "15px Arial", fill: "#000000", align: "left" };
         story = game.add.text(175, 85, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
         story.fixedToCamera = true;
+    //    iText = game.add.text(400, 175, 'Interpersonal: ', style);
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
     }
@@ -70,6 +76,8 @@ window.onload = function()
             planningDown = game.add.button(250, 350, 'button', subPlStat);
             speedUp = game.add.button(550, 425, 'button', addSStat);
             speedDown = game.add.button(250, 425, 'button', subSStat); 
+            
+            iText = game.add.text(400, 175, 'Interpersonal: ', style);
         }
     }
     
