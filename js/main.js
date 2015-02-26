@@ -106,8 +106,8 @@ window.onload = function()
             planningDown.kill();
             speedUp.kill();
             speedDown.kill();
+            doneButton.kill();
             
-            done.kill();
             option1 = game.add.button(175, 530, 'option1', statsDone, this, 1, 0, 2);
             option2 = game.add.button(325, 530, 'option2', statsDone, this, 1, 0, 2);
             option3 = game.add.button(475, 530, 'option3', statsDone, this, 1, 0, 2);
