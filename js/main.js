@@ -57,7 +57,8 @@ window.onload = function()
         
         //text set up
         style = { font: "15px Arial", fill: "#000000", align: "left" };
-        story = game.add.text(175, 85, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
+        story = game.add.text(175, 85, 'The time has come  to apply for your first industry job!  All that time spent working on your degree, you improved your skills -- where did you focus?\n
+        'You\'ve got 20 skillpoints to spend, each will give you 5 experience points in a given area.  Spend them wisely, as they will each effect how you perform in your interview.' , style);
         story.fixedToCamera = true;
         iText = game.add.text(400, 175, 'Interpersonal: 0', style);
         prText = game.add.text(400, 250, 'Programming: 0', style);
