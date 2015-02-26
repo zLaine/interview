@@ -18,6 +18,7 @@ window.onload = function()
     var prText;
     var plText;
     var sText;
+    var skillText;
     
     //var bgm;
     var bg;
@@ -64,6 +65,7 @@ window.onload = function()
         prText = game.add.text(400, 250, 'Programming: 0', style);
         plText = game.add.text(400, 325, 'Planning: 0', style);
         sText = game.add.text(400, 400, 'Speed: 0', style);
+        skillText = game.add.text(16, 85, 'Skill points: 20', style);
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
     }
@@ -96,6 +98,7 @@ window.onload = function()
                 skillPoints = 0;
             }
             iText.text =  'Interpersonal: ' + interpersonal;
+            skillText.text = 'Skill points: ' + skillPoints;
             console.log('Interpersonal: ' , interpersonal);
         }
     }
@@ -113,6 +116,7 @@ window.onload = function()
             skillPoints = maxSkillPoints;
         }
         iText.text =  'Interpersonal: ' + interpersonal;
+        skillText.text = 'Skill points: ' + skillPoints;
         console.log('Interpersonal: ' , interpersonal);
     }
     
@@ -127,6 +131,7 @@ window.onload = function()
                 skillPoints = 0;
             }
             prText.text =  'Programming: ' + programming;
+            skillText.text = 'Skill points: ' + skillPoints;
             console.log('programming: ' , programming);
         }
     }
@@ -143,6 +148,7 @@ window.onload = function()
             skillPoints = maxSkillPoints;
         }
         prText.text =  'Programming: ' + programming;
+        skillText.text = 'Skill points: ' + skillPoints;
         console.log('programming: ' , programming);
     }
     
@@ -157,6 +163,7 @@ window.onload = function()
                 skillPoints = 0;
             }
             plText.text =  'Planning: ' + planning;
+            skillText.text = 'Skill points: ' + skillPoints;
             console.log('planning: ' , planning);
         }
     }
@@ -173,6 +180,7 @@ window.onload = function()
             skillPoints = maxSkillPoints;
         }
         plText.text =  'Planning: ' + planning;
+        skillText.text = 'Skill points: ' + skillPoints;
         console.log('planning: ' , planning);
     }
     
@@ -187,6 +195,7 @@ window.onload = function()
                 skillPoints = 0;
             }
             sText.text =  'Speed: ' + speed;
+            skillText.text = 'Skill points: ' + skillPoints;
             console.log('speed: ' , speed);
         }
     }
@@ -203,6 +212,7 @@ window.onload = function()
             skillPoints = maxSkillPoints;
         }
         sText.text =  'Speed: ' + speed;
+        skillText.text = 'Skill points: ' + skillPoints;
         console.log('speed: ' , speed);
     }
     
