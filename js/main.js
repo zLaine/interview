@@ -11,7 +11,7 @@ window.onload = function()
     var planning = 0;
     var speed = 0;
     
-    var text;
+    var story;
     var style;
     
     //var bgm;
@@ -51,9 +51,9 @@ window.onload = function()
         bgm.volume = .5;
         bgm.play(); */
         
-        style = { font: "15px Arial", fill: "#000000", align: "center" };
-        text = game.add.text(16, 16, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
-        text.fixedToCamera = true;
+        style = { font: "15px Arial", fill: "#000000", align: "left" };
+        story = game.add.text(100, 75, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
+        story.fixedToCamera = true;
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
     }
