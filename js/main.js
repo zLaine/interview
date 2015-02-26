@@ -24,7 +24,7 @@ window.onload = function()
     //var bgm;
     var bg;
     
-    var statChoosing = true;
+//    var statChoosing = true;
     
     var interpersonalUp;
     var interpersonalDown;
@@ -68,7 +68,7 @@ window.onload = function()
         plText = game.add.text(400, 325, 'Planning: 0', style);
         sText = game.add.text(400, 400, 'Speed: 0', style);
         skillText = game.add.text(16, 85, 'Skill points: 20', style);
-        //done = game.add.text(400, 525, 'Done', style);
+        done = game.add.text(435, 535, 'Done', style);
         
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
@@ -113,10 +113,14 @@ window.onload = function()
     
     function statsDone()
     {
-        statChoosing = false;
-        console.log('StatChoosing: ' , statChoosing);
-        
         interpersonalUp.kill();
+        interpersonalDown.kill();
+        programmingUp.kill();
+        programmingDown.kill();
+        planningUp.kill();
+        planningDown.kill();
+        speedUp.kill();
+        speedDown.kill();
     }
     
     function addIStat()
@@ -132,7 +136,6 @@ window.onload = function()
             iText.text =  'Interpersonal: ' + interpersonal;
             skillText.text = 'Skill points: ' + skillPoints;
             console.log('Interpersonal: ' , interpersonal);
-            console.log('StatChoosing: ' , statChoosing);
         }
     }
     
