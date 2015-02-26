@@ -13,7 +13,7 @@ window.onload = function()
     var text;
     var style;
     
-    var bgm;
+    //var bgm;
     var bg;
     
     var statChoosing = true;
@@ -27,12 +27,15 @@ window.onload = function()
     var speedUp;
     var speedDown;
     
+    var leftButtonX = (game.world.centerX - 70);
+    var rightButtonX = (game.world.centerX + 70);
+    
     function preload()
     {
         game.load.image('bg', 'assets/sectioned_bg.png');
         game.load.image('button', 'assets/button.png');
         
-        game.load.audio('bgm', 'assets/reunited.mp3');
+        //game.load.audio('bgm', 'assets/reunited.mp3');
     }
     function create()
     {
@@ -61,8 +64,14 @@ window.onload = function()
         if(statChoosing == true)
         {
             //creating buttons
-            interpersonalUp = game.add.button(game.world.centerX - 70, 200, 'button', addStat);
-            interpersonalDown = game.add.button(game.world.centerX + 70, 200, 'button', subStat);
+            interpersonalUp = game.add.button(leftButtonX, 200, 'button', addStat);
+            interpersonalDown = game.add.button(rightButtonX, 200, 'button', subStat);
+            programmingUp = game.add.button(leftButtonX, 200, 'button', addStat);
+            programmingDown = game.add.button(rightButtonX, 200, 'button', subStat);
+            planningUp = game.add.button(leftButtonX, 200, 'button', addStat);
+            planningDown = game.add.button(rightButtonX, 200, 'button', subStat);
+            speedUp = game.add.button(leftButtonX, 200, 'button', addStat);
+            speedDown = game.add.button(rightButtonX, 200, 'button', subStat);
         }
     }
     
