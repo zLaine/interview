@@ -97,7 +97,7 @@ window.onload = function()
     {
         statChoosing = false;
         
-        interpersonalUp.kill();
+        interpersonalUp.destroy();
     }
     
     function addIStat()
