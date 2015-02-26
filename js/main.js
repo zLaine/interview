@@ -16,9 +16,19 @@ window.onload = function()
     var bgm;
     var bg;
     
+    var interpersonalUp;
+    var interpersonalDown;
+    var programmingUp;
+    var programmingDown;
+    var planningUp;
+    var planningDown;
+    var speedUp;
+    var speedDown;
+    
     function preload()
     {
         game.load.image('bg', 'assets/sectioned_bg.png');
+        game.load.image('button', 'assets/button.png');
         
         game.load.audio('bgm', 'assets/Reunited.mp3');
     }
@@ -29,6 +39,8 @@ window.onload = function()
         bg = game.add.sprite(0,0, 'bg');
         
         //creating buttons
+        interpersonalUp = game.add.button(game.world.centerX - 40, 400, 'button', addStat(interpersonal));
+        interpersonalDown = game.add.button(game.world.centerX + 40, 400, 'button', subStat(interpersonal));
         
         //playing music
         bgm = game.add.audio('bgm');
@@ -47,6 +59,15 @@ window.onload = function()
         
     }
     
+    function addStat(stat)
+    {
+        stat++;
+    }
+    
+    function subStat(stat)
+    {
+        stat--;
+    }
     
     function eventTrigger(spriteA, spriteB)
     {
