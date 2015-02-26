@@ -87,14 +87,17 @@ window.onload = function()
     
     function addIStat()
     {
-        skillPoints--;
-        interpersonal++;
-        if(skillPoints < 0)
+        if(skillPoints > 0)
         {
-            skillPoints = 0;
+            skillPoints--;
+            interpersonal++;
+            if(skillPoints < 0)
+            {
+                skillPoints = 0;
+            }
+            iText.text =  'Interpersonal: ' + interpersonal;
+            console.log('Interpersonal: ' , interpersonal);
         }
-        iText.text =  'Interpersonal: ' + interpersonal;
-        console.log('Interpersonal: ' , interpersonal);
     }
     
     function subIStat()
@@ -115,14 +118,17 @@ window.onload = function()
     
     function addPrStat()
     {
-        skillPoints--;
-        programming++;
-        if(skillPoints < 0)
+        if(skillPoints > 0)
         {
-            skillPoints = 0;
+            skillPoints--;
+            programming++;
+            if(skillPoints < 0)
+            {
+                skillPoints = 0;
+            }
+            prText.text =  'Programming: ' + programming;
+            console.log('programming: ' , programming);
         }
-        prText.text =  'Programming: ' + programming;
-        console.log('programming: ' , programming);
     }
     function subPrStat()
     {
@@ -142,14 +148,17 @@ window.onload = function()
     
     function addPlStat()
     {
-        skillPoints--;
-        planning++;
-        if(skillPoints < 0)
+        if(skillPoints > 0)
         {
-            skillPoints = 0;
+            skillPoints--;
+            planning++;
+            if(skillPoints < 0)
+            {
+                skillPoints = 0;
+            }
+            plText.text =  'Planning: ' + planning;
+            console.log('planning: ' , planning);
         }
-        plText.text =  'Planning: ' + planning;
-        console.log('planning: ' , planning);
     }
     function subPlStat()
     {
@@ -169,14 +178,17 @@ window.onload = function()
     
     function addSStat()
     {
-        skillPoints--;
-        speed++;
-        if(skillPoints < 0)
+        if(skillPoints > 0)
         {
-            skillPoints = 0;
+            skillPoints--;
+            speed++;
+            if(skillPoints < 0)
+            {
+                skillPoints = 0;
+            }
+            sText.text =  'Speed: ' + speed;
+            console.log('speed: ' , speed);
         }
-        sText.text =  'Speed: ' + speed;
-        console.log('speed: ' , speed);
     }
     function subSStat()
     {
@@ -199,6 +211,6 @@ window.onload = function()
         var boundsA = spriteA.getBounds();
         var boundsB = spriteB.getBounds();
     
-        return Phaser.Rectangle.intersects(boundsA, boundsB);
+        return Phaser.Rectangle.intersects(boundsA, boundsB); 
     }
 };
