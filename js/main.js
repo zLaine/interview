@@ -88,7 +88,7 @@ window.onload = function()
             speedDown = game.add.button(250, 425, 'button', subSStat); 
             
             doneButton = game.add.button(400, 525, 'button', addIStat);
-            done = game.add.text(425, 545, 'Done', style);
+            done = game.add.text(435, 535, 'Done', style);
         }
     }
     
