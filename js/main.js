@@ -64,12 +64,12 @@ window.onload = function()
             //creating buttons
             interpersonalUp = game.add.button(550, 200, 'button', addIStat);
             interpersonalDown = game.add.button(250, 200, 'button', subIStat);
-            programmingUp = game.add.button(550, 300, 'button', addPrStat);
-            programmingDown = game.add.button(250, 300, 'button', subPrStat);
-            planningUp = game.add.button(550, 400, 'button', addPlStat);
-            planningDown = game.add.button(250, 400, 'button', subPlStat);
-            speedUp = game.add.button(550, 500, 'button', addSStat);
-            speedDown = game.add.button(250, 500, 'button', subSStat); 
+            programmingUp = game.add.button(550, 250, 'button', addPrStat);
+            programmingDown = game.add.button(250, 250, 'button', subPrStat);
+            planningUp = game.add.button(550, 300, 'button', addPlStat);
+            planningDown = game.add.button(250, 300, 'button', subPlStat);
+            speedUp = game.add.button(550, 350, 'button', addSStat);
+            speedDown = game.add.button(250, 350, 'button', subSStat); 
         }
     }
     
