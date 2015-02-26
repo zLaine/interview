@@ -93,8 +93,9 @@ window.onload = function()
         
         if(statChoosing == false)
         {
-            interpersonalUp.destroy();
-            interpersonalDown.destroy();
+            game.world.remove(interpersonalUp);
+            //interpersonalUp.destroy();
+            //interpersonalDown.destroy();
         }
         
     }
