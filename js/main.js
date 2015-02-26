@@ -5,11 +5,11 @@ window.onload = function()
     "use strict";
     var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update } );
     
-    var skillPoints;
-    var interpersonal;
-    var programming;
-    var planning;
-    var speed;
+    var skillPoints = 20;
+    var interpersonal = 0;
+    var programming = 0;
+    var planning = 0;
+    var speed = 0;
     
     var text;
     var style;
