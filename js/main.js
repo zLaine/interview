@@ -92,7 +92,7 @@ window.onload = function()
     {
         skillPoints--;
         interpersonal++;
-        iText.text =  interpersonal;
+        iText.text =  'Interpersonal: ' + interpersonal;
         console.log('Interpersonal: ' , interpersonal);
     }
     
