@@ -64,12 +64,12 @@ window.onload = function()
             //creating buttons
             interpersonalUp = game.add.button(550, 200, 'button', addIStat);
             interpersonalDown = game.add.button(250, 200, 'button', subIStat);
-            programmingUp = game.add.button(550, 250, 'button', addStat);
-            programmingDown = game.add.button(250, 250, 'button', subStat);
-            planningUp = game.add.button(550, 300, 'button', addStat);
-            planningDown = game.add.button(250, 300, 'button', subStat);
-            speedUp = game.add.button(550, 350, 'button', addStat);
-            speedDown = game.add.button(250, 350, 'button', subStat); 
+            programmingUp = game.add.button(550, 250, 'button', addPrStat);
+            programmingDown = game.add.button(250, 250, 'button', subPrStat);
+            planningUp = game.add.button(550, 300, 'button', addPlStat);
+            planningDown = game.add.button(250, 300, 'button', subPlStat);
+            speedUp = game.add.button(550, 350, 'button', addSStat);
+            speedDown = game.add.button(250, 350, 'button', subSStat); 
         }
     }
     
@@ -85,6 +85,45 @@ window.onload = function()
         skillPoints++;
         interpersonal--;
         console.log('Interpersonal: ' , interpersonal);
+    }
+    
+    function addPrStat()
+    {
+        skillPoints--;
+        programming++;
+        console.log('Interpersonal: ' , programming);
+    }
+    function subPrStat()
+    {
+        skillPoints++;
+        programming--;
+        console.log('Interpersonal: ' , programming);
+    }
+    
+    function addPlStat()
+    {
+        skillPoints--;
+        planning++;
+        console.log('Interpersonal: ' , planning);
+    }
+    function subPlStat()
+    {
+        skillPoints++;
+        planning--;
+        console.log('Interpersonal: ' , planning);
+    }
+    
+    function addSStat()
+    {
+        skillPoints--;
+        speed++;
+        console.log('Interpersonal: ' , speed);
+    }
+    function subSStat()
+    {
+        skillPoints++;
+        speed--;
+        console.log('Interpersonal: ' , speed);
     }
     
     function eventTrigger(spriteA, spriteB)
