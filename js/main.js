@@ -68,7 +68,7 @@ window.onload = function()
         plText = game.add.text(400, 325, 'Planning: 0', style);
         sText = game.add.text(400, 400, 'Speed: 0', style);
         skillText = game.add.text(16, 85, 'Skill points: 20', style);
-        done = game.add.text(doneButton.height, doneButton.weight, 'Done', style);
+        done = game.add.text(400, 525, 'Done', style);
         
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
@@ -87,7 +87,7 @@ window.onload = function()
             speedUp = game.add.button(550, 425, 'button', addSStat);
             speedDown = game.add.button(250, 425, 'button', subSStat); 
             
-            doneButton = game.add.button(400, 500, 'button', addIStat);
+            doneButton = game.add.button(400, 525, 'button', addIStat);
         }
     }
     
