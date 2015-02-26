@@ -17,11 +17,6 @@ window.onload = function()
     var prText;
     var plText;
     var sText;
-
-    var iText2;
-    var prText2;
-    var plText2;
-    var sText2;
     
     //var bgm;
     var bg;
@@ -65,6 +60,9 @@ window.onload = function()
         story = game.add.text(175, 85, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
         story.fixedToCamera = true;
         iText = game.add.text(400, 175, 'Interpersonal: ', style);
+        prText = game.add.text(400, 250, 'Programming: ', style);
+        plText = game.add.text(400, 325, 'Algorithm Development: ', style);
+        sText = game.add.text(400, 400, 'Speed: ', style);
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
     }
@@ -82,8 +80,6 @@ window.onload = function()
             speedUp = game.add.button(550, 425, 'button', addSStat);
             speedDown = game.add.button(250, 425, 'button', subSStat); 
             
-            //iText = game.add.text(400, 175, 'Interpersonal: ', style);
-            //iText2 = game.add.text(415, 175, 'Interpersonal: ', style);
             
         }
     }
@@ -100,6 +96,7 @@ window.onload = function()
     {
         skillPoints++;
         interpersonal--;
+        iText.text =  'Interpersonal: ' + interpersonal;
         console.log('Interpersonal: ' , interpersonal);
     }
     
@@ -107,12 +104,14 @@ window.onload = function()
     {
         skillPoints--;
         programming++;
+        iText.text =  'Programming: ' + programming;
         console.log('programming: ' , programming);
     }
     function subPrStat()
     {
         skillPoints++;
         programming--;
+        iText.text =  'Programming: ' + programming;
         console.log('programming: ' , programming);
     }
     
@@ -120,12 +119,14 @@ window.onload = function()
     {
         skillPoints--;
         planning++;
+        iText.text =  'Algorithm Development: ' + planning;
         console.log('planning: ' , planning);
     }
     function subPlStat()
     {
         skillPoints++;
         planning--;
+        iText.text =  'Algorithm Development: ' + planning;
         console.log('planning: ' , planning);
     }
     
@@ -133,12 +134,14 @@ window.onload = function()
     {
         skillPoints--;
         speed++;
+        iText.text =  'Speed: ' + speed;
         console.log('speed: ' , speed);
     }
     function subSStat()
     {
         skillPoints++;
         speed--;
+        iText.text =  'Speed: ' + speed;
         console.log('speed: ' , speed);
     }
     
