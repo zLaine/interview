@@ -56,13 +56,13 @@ window.onload = function()
         bgm.play(); */
         
         //text set up
-        style = { font: "15px Arial", fill: "#000000", align: "center" };
+        style = { font: "15px Arial", fill: "#000000", align: "left" };
         story = game.add.text(175, 85, 'Look around, see if you can see any \nclues that might help you find your hatchling.', style);
         story.fixedToCamera = true;
-        iText = game.add.text(400, 175, 'Interpersonal: ', style);
-        prText = game.add.text(400, 250, 'Programming: ', style);
-        plText = game.add.text(400, 325, 'Algorithm Development: ', style);
-        sText = game.add.text(400, 400, 'Speed: ', style);
+        iText = game.add.text(400, 175, 'Interpersonal: 0', style);
+        prText = game.add.text(400, 250, 'Programming: 0', style);
+        plText = game.add.text(400, 325, 'Planning: 0', style);
+        sText = game.add.text(400, 400, 'Speed: 0', style);
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
     }
@@ -96,6 +96,10 @@ window.onload = function()
     {
         skillPoints++;
         interpersonal--;
+        if(interpersonal < 0)
+        {
+            interpersonal = 0;
+        }
         iText.text =  'Interpersonal: ' + interpersonal;
         console.log('Interpersonal: ' , interpersonal);
     }
@@ -119,14 +123,14 @@ window.onload = function()
     {
         skillPoints--;
         planning++;
-        plText.text =  'Algorithm Development: ' + planning;
+        plText.text =  'Planning: ' + planning;
         console.log('planning: ' , planning);
     }
     function subPlStat()
     {
         skillPoints++;
         planning--;
-        plText.text =  'Algorithm Development: ' + planning;
+        plText.text =  'Planning: ' + planning;
         console.log('planning: ' , planning);
     }
     
