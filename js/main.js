@@ -121,6 +121,8 @@ window.onload = function()
         planningDown.kill();
         speedUp.kill();
         speedDown.kill();
+        
+        iText.x = 16;
     }
     
     function addIStat()
