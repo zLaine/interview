@@ -84,7 +84,7 @@ window.onload = function()
     {
         skillPoints++;
         interpersonal--;
-        console.log('Interpersonal: ' + interpersonal');
+        console.log('Interpersonal: ' + interpersonal);
     }
     
     function eventTrigger(spriteA, spriteB)
