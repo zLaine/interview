@@ -116,7 +116,7 @@ window.onload = function()
         statChoosing = false;
         console.log('StatChoosing: ' , statChoosing);
         
-        interpersonalUp.destroy();
+        interpersonalUp.kill();
     }
     
     function addIStat()
