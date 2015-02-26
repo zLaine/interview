@@ -89,9 +89,9 @@ window.onload = function()
     {
         skillPoints--;
         interpersonal++;
-        if(skillPoints > maxSkillPoints)
+        if(skillPoints < 0)
         {
-            skillPoints = maxSkillPoints;
+            skillPoints = 0;
         }
         iText.text =  'Interpersonal: ' + interpersonal;
         console.log('Interpersonal: ' , interpersonal);
@@ -105,9 +105,9 @@ window.onload = function()
         {
             interpersonal = 0;
         }
-        if(skillPoints < 0)
+        if(skillPoints > maxSkillPoints)
         {
-            skillPoints = 0;
+            skillPoints = maxSkillPoints;
         }
         iText.text =  'Interpersonal: ' + interpersonal;
         console.log('Interpersonal: ' , interpersonal);
@@ -117,9 +117,9 @@ window.onload = function()
     {
         skillPoints--;
         programming++;
-        if(skillPoints > maxSkillPoints)
+        if(skillPoints < 0)
         {
-            skillPoints = maxSkillPoints;
+            skillPoints = 0;
         }
         prText.text =  'Programming: ' + programming;
         console.log('programming: ' , programming);
@@ -132,9 +132,9 @@ window.onload = function()
         {
             programming = 0;
         }
-        if(skillPoints < 0)
+        if(skillPoints > maxSkillPoints)
         {
-            skillPoints = 0;
+            skillPoints = maxSkillPoints;
         }
         prText.text =  'Programming: ' + programming;
         console.log('programming: ' , programming);
@@ -144,9 +144,9 @@ window.onload = function()
     {
         skillPoints--;
         planning++;
-        if(skillPoints > maxSkillPoints)
+        if(skillPoints < 0)
         {
-            skillPoints = maxSkillPoints;
+            skillPoints = 0;
         }
         plText.text =  'Planning: ' + planning;
         console.log('planning: ' , planning);
@@ -159,9 +159,9 @@ window.onload = function()
         {
             planning = 0;
         }
-        if(skillPoints < 0)
+        if(skillPoints > maxSkillPoints)
         {
-            skillPoints = 0;
+            skillPoints = maxSkillPoints;
         }
         plText.text =  'Planning: ' + planning;
         console.log('planning: ' , planning);
@@ -171,9 +171,9 @@ window.onload = function()
     {
         skillPoints--;
         speed++;
-        if(skillPoints > maxSkillPoints)
+        if(skillPoints < 0)
         {
-            skillPoints = maxSkillPoints;
+            skillPoints = 0;
         }
         sText.text =  'Speed: ' + speed;
         console.log('speed: ' , speed);
@@ -186,9 +186,9 @@ window.onload = function()
         {
             speed = 0;
         }
-        if(skillPoints < 0)
+        if(skillPoints > maxSkillPoints)
         {
-            skillPoints = 0;
+            skillPoints = maxSkillPoints;
         }
         sText.text =  'Speed: ' + speed;
         console.log('speed: ' , speed);
