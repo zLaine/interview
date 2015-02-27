@@ -127,12 +127,12 @@ window.onload = function()
             
             if(interpersonal >= 20)
             {
-                option2 = game.add.button(325, 530, 'option2', statsDone, this, 1, 0, 2);
+                option2 = game.add.button(325, 530, 'option2', option2Results, this, 1, 0, 2);
                 option2Text = game.add.text(175, 200, 'Option 2: "Hello!  It\'s nice to meet you!', style);
             }
             if(interpersonal >= 30)
             {
-                option3 = game.add.button(475, 530, 'option3', statsDone, this, 1, 0, 2);
+                option3 = game.add.button(475, 530, 'option3', option3Results, this, 1, 0, 2);
                 option3Text = game.add.text(175, 225, 'Option 3: "Hi, it\'s nice to meet you. Thank you for seeing me!', style);
             }
         }
@@ -140,18 +140,102 @@ window.onload = function()
     
     function option1Results()
     {
-        if (firstInteraction == true)
+        if (firstInteraction == true && secondInteraction == false)
         {
             story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
             option1Text.text = 'Option 1: Talk briefly about your in class projects.';
             
             if(programming >= 40)
             {
-                option2Text.text = 'Option 2: Go into detail about your personal projects and how they relate to what you\'ll be working on with the new job.';
+                option2Text.text = 'Option 2: Go into detail about your personal projects.';
             }
             if(interpersonal >= 50)
             {
                 option3Text.text = 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.';
+            }
+        }
+        
+        else if (secondInteraction == true)
+        {
+            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly easy program \nand designing an algorithm for a more complicated one in a certain amount of time.  After the tasks you\'ve \nbeen assigned have been givin to you, you...';
+            option1Text.text = 'Option 1: Sit down and start coding flat out.';
+            
+            if(planning >= 35)
+            {
+                option2Text.text = 'Option 2: Plan out your algorithm  for both, then start coding the first task.';
+            }
+            if(speed >= 40)
+            {
+                option3Text.text = 'Option 3: Quickly plan out and complete both tasks before the time alotted has run out.';
+            }
+        }
+    }
+    
+    function option2Results()
+    {
+        if (firstInteraction == true && secondInteraction == false)
+        {
+            interviewScore += 10;
+            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
+            option1Text.text = 'Option 1: Talk briefly about your in class projects.';
+            
+            if(programming >= 40)
+            {
+                option2Text.text = 'Option 2: Go into detail about your personal projects.';
+            }
+            if(interpersonal >= 50)
+            {
+                option3Text.text = 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.';
+            }
+        }
+        else if (secondInteraction == true)
+        {
+            interviewScore += 15;
+            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly easy program \nand designing an algorithm for a more complicated one in a certain amount of time.  After the tasks you\'ve \nbeen assigned have been givin to you, you...';
+            option1Text.text = 'Option 1: Sit down and start coding flat out.';
+            
+            if(planning >= 35)
+            {
+                option2Text.text = 'Option 2: Plan out your algorithm  for both, then start coding the first task.';
+            }
+            if(speed >= 40)
+            {
+                option3Text.text = 'Option 3: Quickly plan out and complete both tasks before the time alotted has run out.';
+            }
+        }
+    }
+    
+    function option3Results()
+    {
+        if (firstInteraction == true && secondInteraction == false)
+        {
+            interviewScore += 15;
+            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
+            option1Text.text = 'Option 1: Talk briefly about your in class projects.';
+            
+            if(programming >= 40)
+            {
+                option2Text.text = 'Option 2: Go into detail about your personal projects.';
+            }
+            if(interpersonal >= 50)
+            {
+                option3Text.text = 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.';
+            }
+        }
+        
+        else if (secondInteraction == true)
+        {
+            interviewScore += 25;
+            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly easy program \nand designing an algorithm for a more complicated one in a certain amount of time.  After the tasks you\'ve \nbeen assigned have been givin to you, you...';
+            option1Text.text = 'Option 1: Sit down and start coding flat out.';
+            
+            if(planning >= 35)
+            {
+                option2Text.text = 'Option 2: Plan out your algorithm  for both, then start coding the first task.';
+            }
+            if(speed >= 40)
+            {
+                option3Text.text = 'Option 3: Quickly plan out and complete both tasks before the time alotted has run out.';
             }
         }
     }
