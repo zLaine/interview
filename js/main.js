@@ -158,7 +158,7 @@ window.onload = function()
         
         else if (secondInteraction == true)
         {
-            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly easy program \nand designing an algorithm for a more complicated one in a certain amount of time.  After the tasks you\'ve \nbeen assigned have been givin to you, you...';
+            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of time.  \nAfter the tasks you\'ve been assigned have been givin to you, you...';
             option1Text.text = 'Option 1: Sit down and start coding flat out.';
             
             if(planning >= 35)
@@ -193,7 +193,7 @@ window.onload = function()
         else if (secondInteraction == true)
         {
             interviewScore += 15;
-            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly easy program \nand designing an algorithm for a more complicated one in a certain amount of time.  After the tasks you\'ve \nbeen assigned have been givin to you, you...';
+            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of time.  \nAfter the tasks you\'ve been assigned have been givin to you, you...';
             option1Text.text = 'Option 1: Sit down and start coding flat out.';
             
             if(planning >= 35)
@@ -229,7 +229,7 @@ window.onload = function()
         else if (secondInteraction == true)
         {
             interviewScore += 25;
-            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly easy program \nand designing an algorithm for a more complicated one in a certain amount of time.  After the tasks you\'ve \nbeen assigned have been givin to you, you...';
+            story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of time.  \nAfter the tasks you\'ve been assigned have been givin to you, you...';
             option1Text.text = 'Option 1: Sit down and start coding flat out.';
             
             if(planning >= 35)
