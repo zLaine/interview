@@ -143,15 +143,15 @@ window.onload = function()
         if (firstInteraction == true)
         {
             story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
-            option1Text = game.add.text(175, 175, 'Option 1: Talk briefly about your in class projects.', style);
+            option1Text.text = 'Option 1: Talk briefly about your in class projects.';
             
             if(programming >= 40)
             {
-                option2Text = game.add.text(175, 200, 'Option 2: Go into detail about your personal projects and how they relate to what you\'ll be working on with the new job.', style);
+                option2Text.text = 'Option 2: Go into detail about your personal projects and how they relate to what you\'ll be working on with the new job.';
             }
             if(interpersonal >= 50)
             {
-                option3Text = game.add.text(175, 225, 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.', style);
+                option3Text.text = 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.';
             }
         }
     }
