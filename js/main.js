@@ -19,7 +19,6 @@ window.onload = function()
     var plText;
     var sText;
     var skillText;
-    var done;
     
     //var bgm;
     var bg;
@@ -72,7 +71,6 @@ window.onload = function()
         plText = game.add.text(400, 325, 'Planning: 0', style);
         sText = game.add.text(400, 400, 'Speed: 0', style);
         skillText = game.add.text(16, 85, 'Skill points: 20', style);
-        done = game.add.text(435, 535, 'Done', style);
         
         
         game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR]);
