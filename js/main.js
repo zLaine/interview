@@ -158,15 +158,19 @@ window.onload = function()
         
         else if (secondInteraction == true)
         {
+            option2Text.kill();
+            option3Text.kill();
             story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of \ntime.  After the tasks you\'ve been assigned have been givin to you, you...';
             option1Text.text = 'Option 1: Sit down and start coding flat out.';
             
             if(planning >= 35)
             {
+                option2Text.revive();
                 option2Text.text = 'Option 2: Plan out your algorithm  for both, then start coding the first task.';
             }
             if(speed >= 40)
             {
+                option3Text.revive();
                 option3Text.text = 'Option 3: Quickly plan out and complete both tasks before the time alotted has run out.';
             }
         }
@@ -192,16 +196,20 @@ window.onload = function()
         }
         else if (secondInteraction == true)
         {
+            option2Text.kill();
+            option3Text.kill();
             interviewScore += 15;
             story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of \ntime.  After the tasks you\'ve been assigned have been givin to you, you...';
             option1Text.text = 'Option 1: Sit down and start coding flat out.';
             
             if(planning >= 35)
             {
+                option2Text.revive();
                 option2Text.text = 'Option 2: Plan out your algorithm  for both, then start coding the first task.';
             }
             if(speed >= 40)
             {
+                option3Text.revive();
                 option3Text.text = 'Option 3: Quickly plan out and complete both tasks before the time alotted has run out.';
             }
         }
@@ -228,16 +236,20 @@ window.onload = function()
         
         else if (secondInteraction == true)
         {
+            option2Text.kill();
+            option3Text.kill();
             interviewScore += 25;
             story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of \ntime.  After the tasks you\'ve been assigned have been givin to you, you...';
             option1Text.text = 'Option 1: Sit down and start coding flat out.';
             
             if(planning >= 35)
             {
+                option2Text.revive();
                 option2Text.text = 'Option 2: Plan out your algorithm  for both, then start coding the first task.';
             }
             if(speed >= 40)
             {
+                option3Text.revive();
                 option3Text.text = 'Option 3: Quickly plan out and complete both tasks before the time alotted has run out.';
             }
         }
