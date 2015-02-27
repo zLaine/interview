@@ -142,7 +142,8 @@ window.onload = function()
     {
         if (firstInteraction == true && secondInteraction == false)
         {
-            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
+            secondInteraction = true;
+            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your \npast projects and learning the details of the job you\'re applying for.';
             option1Text.text = 'Option 1: Talk briefly about your in class projects.';
             
             if(programming >= 40)
@@ -175,8 +176,9 @@ window.onload = function()
     {
         if (firstInteraction == true && secondInteraction == false)
         {
+            secondInteraction = true;
             interviewScore += 10;
-            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
+            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your \npast projects and learning the details of the job you\'re applying for.';
             option1Text.text = 'Option 1: Talk briefly about your in class projects.';
             
             if(programming >= 40)
@@ -209,8 +211,9 @@ window.onload = function()
     {
         if (firstInteraction == true && secondInteraction == false)
         {
+            secondInteraction = true;
             interviewScore += 15;
-            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
+            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your \npast projects and learning the details of the job you\'re applying for.';
             option1Text.text = 'Option 1: Talk briefly about your in class projects.';
             
             if(programming >= 40)
