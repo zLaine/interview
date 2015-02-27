@@ -112,8 +112,6 @@ window.onload = function()
             speedDown.kill();
             doneButton.kill();
             
-            option3 = game.add.button(475, 530, 'option3', statsDone, this, 1, 0, 2);
-            
             iText.x = 16;
             prText.x = 16;
             plText.x = 16;
