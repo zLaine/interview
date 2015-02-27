@@ -44,6 +44,9 @@ window.onload = function()
     var option2;
     var option3;
     
+    var firstInteraction = false;
+    var secondInteraction = false;
+    
     function preload()
     {
         game.load.image('bg', 'assets/sectioned_bg.png');
@@ -118,18 +121,36 @@ window.onload = function()
             sText.x = 16;
             
             story.text = 'You arrive early and introduce yourself to the manager who\'ll be conducting your interview.';
-            option1 = game.add.button(175, 530, 'option1', statsDone, this, 1, 0, 2);
+            option1 = game.add.button(175, 530, 'option1', option1Results, this, 1, 0, 2);
             option1Text = game.add.text(175, 175, 'Option 1: "Hi."', style);
             
-            if(interpersonal >= 15)
+            if(interpersonal >= 20)
             {
                 option2 = game.add.button(325, 530, 'option2', statsDone, this, 1, 0, 2);
                 option2Text = game.add.text(175, 200, 'Option 2: "Hello!  It\'s nice to meet you!', style);
             }
-            if(interpersonal >= 25)
+            if(interpersonal >= 30)
             {
                 option3 = game.add.button(475, 530, 'option3', statsDone, this, 1, 0, 2);
                 option3Text = game.add.text(175, 225, 'Option 3: "Hi, it\'s nice to meet you. Thank you for seeing me!', style);
+            }
+        }
+    }
+    
+    function option1Results()
+    {
+        if firstInteraction == true)
+        {
+            story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
+            option1Text = game.add.text(175, 175, 'Option 1: Talk briefly about your in class projects.', style);
+            
+            if(programming >= 40)
+            {
+                option2Text = game.add.text(175, 200, 'Option 2: Go into detail about your personal projects and how they relate to what you\'ll be working on with the new job.', style);
+            }
+            if(interpersonal >= 50)
+            {
+                option3Text = game.add.text(175, 225, 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.', style);
             }
         }
     }
