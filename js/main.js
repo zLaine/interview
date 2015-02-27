@@ -121,14 +121,14 @@ window.onload = function()
             
             story.text = 'You arrive early and introduce yourself to the manager who\'ll be conducting your interview.';
             option1 = game.add.button(175, 530, 'option1', statsDone, this, 1, 0, 2);
-            option1Text = game.add.text(175, 175, 'Option 1: "Hi', style);
+            option1Text = game.add.text(175, 175, 'Option 1: "Hi."', style);
             
-            if(interpersonal > 15)
+            if(interpersonal >= 15)
             {
                 option2 = game.add.button(325, 530, 'option2', statsDone, this, 1, 0, 2);
                 option2Text = game.add.text(175, 200, 'Option 2: "Hello!  It\'s nice to meet you!', style);
             }
-            if(interpersonal > 25)
+            if(interpersonal >= 25)
             {
                 option3 = game.add.button(475, 530, 'option3', statsDone, this, 1, 0, 2);
                 option3Text = game.add.text(175, 225, 'Option 3: "Hi, it\'s nice to meet you. Thank you for seeing me!', style);
