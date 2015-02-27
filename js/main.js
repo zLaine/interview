@@ -58,7 +58,7 @@ window.onload = function()
         game.load.spritesheet('option2', 'assets/option2.png', 111, 40, 3);
         game.load.spritesheet('option3', 'assets/option3.png', 111, 40, 3);
         
-        game.load.audio('bgm', 'assets/reunited.mp3');
+        game.load.audio('bgm', 'assets/Reunited.mp3');
     }
     function create()
     {
