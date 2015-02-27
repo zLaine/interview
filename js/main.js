@@ -46,6 +46,7 @@ window.onload = function()
     
     var firstInteraction = false;
     var secondInteraction = false;
+    var thirdInteraction = false;
     
     function preload()
     {
@@ -156,8 +157,9 @@ window.onload = function()
             }
         }
         
-        else if (secondInteraction == true)
+        else if (secondInteraction == true && thirdInteraction == false)
         {
+            thirdInteraction = true;
             option2Text.text = '';
             option3Text.text = '';
             story.text = 'Eventually, the programming portion of the interview comes.  You\'re tasked with writing a fairly\n easy program and designing an algorithm for a more complicated one in a certain amount of \ntime.  After the tasks you\'ve been assigned have been givin to you, you...';
@@ -192,8 +194,9 @@ window.onload = function()
                 option3Text.text = 'Option 3: Control the conversation to talk more about the job you\'re interviewing for.\n  Persuade her about what an excellent addition you\'ll make to her team.';
             }
         }
-        else if (secondInteraction == true)
+        else if (secondInteraction == true && thirdInteraction == false)
         {
+            thirdInteraction = true;
             option2Text.text = '';
             option3Text.text = '';
             interviewScore += 15;
@@ -230,8 +233,9 @@ window.onload = function()
             }
         }
         
-        else if (secondInteraction == true)
+        else if (secondInteraction == true && thirdInteraction == false)
         {
+            thirdInteraction = true;
             option2Text.text = '';
             option3Text.text = '';
             interviewScore += 25;
