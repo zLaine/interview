@@ -58,7 +58,7 @@ window.onload = function()
         game.load.spritesheet('option2', 'assets/option2.png', 111, 40, 3);
         game.load.spritesheet('option3', 'assets/option3.png', 111, 40, 3);
         
-        //game.load.audio('bgm', 'assets/reunited.mp3');
+        game.load.audio('bgm', 'assets/reunited.mp3');
     }
     function create()
     {
@@ -67,10 +67,10 @@ window.onload = function()
         bg = game.add.sprite(0,0, 'bg');
         
         //playing music
-     /*   bgm = game.add.audio('bgm');
+        bgm = game.add.audio('bgm');
         bgm.loop = true;
         bgm.volume = .5;
-        bgm.play(); */
+        bgm.play(); 
         
         //text set up
         style = { font: "15px Arial", fill: "#000000", align: "left" };
