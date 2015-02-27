@@ -123,6 +123,7 @@ window.onload = function()
             story.text = 'You arrive early and introduce yourself to the manager who\'ll be conducting your interview.';
             option1 = game.add.button(175, 530, 'option1', option1Results, this, 1, 0, 2);
             option1Text = game.add.text(175, 175, 'Option 1: "Hi."', style);
+            firstInteraction = true;
             
             if(interpersonal >= 20)
             {
