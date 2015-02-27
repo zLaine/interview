@@ -26,7 +26,7 @@ window.onload = function()
     var option2Text;
     var option3Text;
     
-    //var bgm;
+    var bgm;
     var bg;
     
 //    var statChoosing = true;
