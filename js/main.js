@@ -139,7 +139,7 @@ window.onload = function()
     
     function option1Results()
     {
-        if firstInteraction == true)
+        if (firstInteraction == true)
         {
             story.text = 'You go into her office and both take a seat.  You spend the next 20 minutes talking about your past projects \nand learning the details of the job you\'re applying for.';
             option1Text = game.add.text(175, 175, 'Option 1: Talk briefly about your in class projects.', style);
